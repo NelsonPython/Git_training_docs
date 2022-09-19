@@ -12,7 +12,7 @@ Get started by cloning a Github repo, adding content, and pushing updates back t
 
 The original repo has only one file, README.md.   Using git on your local machine, follow these steps to clone a repo, add a local file, merge the local file into the main branch, and push the updates back to Github.
 
-![](Git_training.png)
+![](images/Github_beg.png)
 
 ## Configure git on local machine
 If git is not configured, then configure git.
@@ -99,18 +99,21 @@ $ git commit -a -m 'Create a new file'
 Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
-  
+
+![](images/bugFix_not_Main.png)
+
+
 ## Merge the changes from the hotfix branch
 
 ```  
-$ git merge hotfix
-```
+$ git merge bugFix
   
 Updating 4b58142..d9912f7
 Fast-forward
 index.html | 7 +++++++
 1 file changed, 7 insertions(+)
 create mode 100644 index.html
+```
 
 ## Push the changes back to Github.
 
@@ -132,3 +135,7 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/UserName/test_md
 4b58142..d9912f7 main -> main
 ```
+
+![](images/Github_end.png)
+
+
