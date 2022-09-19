@@ -143,6 +143,7 @@ Writing objects: 100% (3/3), 366 bytes | 6.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/UserName/Git_Training
    3df6c62..fd209ac  main -> main```
+```
 
 ![](images/Git_end.png)
 
