@@ -4,15 +4,15 @@ Get started by cloning a Github repo, adding content, and pushing updates back t
 
 ## Prerequisites: 
 
-1. Set up your test_md repo on Github with a README.md file
+1. Set up a repo on Github with a README.md file
 2. Create a PAT (personal access token)
 3. Install git on Linux.  This example runs on Ubuntu 20.04 LTS installed on Microsoft Windows Subsystem for Linux on Windows 10.
 
 ## Github repo
 
-The original repo has only one file, README.md.   Using git on your local machine, follow these steps to clone a repo, add a local file, merge the local file into the main branch, and push the updates back to Github.
-
 ![](images/Github_beg.png)
+
+Using git on your local machine, follow these steps to clone a repo, add a local file, merge the local file into the main branch, and push the updates back to Github.
 
 ## Configure git on local machine
 If git is not configured, then configure git.
@@ -35,11 +35,11 @@ Download a copy of the repo
 $ git clone https://github.com/UserName/Git_Training
 
 Cloning into 'Git_Training'...
-remote: Enumerating objects: 29, done.
-remote: Counting objects: 100% (29/29), done.
-remote: Compressing objects: 100% (24/24), done.
-remote: Total 29 (delta 6), reused 0 (delta 0), pack-reused 0
-Unpacking objects: 100% (29/29), 31.02 KiB | 49.00 KiB/s, done.
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.22 KiB | 2.00 KiB/s, done.
 ```
 
 ## Navigate to the repo folder
@@ -49,6 +49,10 @@ cd Git_Training
 ```
 
 View the git log
+
+```
+$ git log
+```
 
 ![Git log](images/log.png)
 
@@ -64,14 +68,18 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
+## Create a new branch
+
+```
+$ git checkout -b bugFix
+
+Switched to a new branch 'bugFix'
+```
+
 ## Add a new file
 
 ```
-$ git checkout bugFix
 $ nano bugBountyHunters.md
-```
-
-```
 $ git commit -a -m 'Create a new file'
 
 On branch main
@@ -86,9 +94,10 @@ nothing added to commit but untracked files present (use "git add" to track)
 $ git add bugBountyHunters.md
 
 $ git commit -a -m 'Create a new file'
-[main f6cf151] Create a new file
+
+[bugFix fd209ac] Create a new file
  1 file changed, 3 insertions(+)
- create mode 100644 bugFix.md
+ create mode 100644 bugBountyHunters.md
 ```
 
 ## Return to the main branch
@@ -103,16 +112,16 @@ Your branch is up to date with 'origin/main'.
 ![](images/bugFix_not_Main.png)
 
 
-## Merge the changes from the hotfix branch
+## Merge the changes from the bugFix branch
 
 ```  
 $ git merge bugFix
   
-Updating 4b58142..d9912f7
+Updating 3df6c62..fd209ac
 Fast-forward
-index.html | 7 +++++++
-1 file changed, 7 insertions(+)
-create mode 100644 index.html
+ bugBountyHunters.md | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 bugBountyHunters.md
 ```
 
 ## Push the changes back to Github.
@@ -120,9 +129,9 @@ create mode 100644 index.html
   Use your PAT (personal access token) instead of your Github password.
 
 ```
-$ git remote add hotfix https://github.com/UserName/test_md
+$ git remote add bugFix https://github.com/UserName/Git_Training
 
-$ git push -f hotfix main
+$ git push -f bugFix main
 
 Username for 'https://github.com': UserName
 Password for 'https://UserName@github.com':
@@ -130,11 +139,10 @@ Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 343 bytes | 5.00 KiB/s, done.
+Writing objects: 100% (3/3), 366 bytes | 6.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
-To https://github.com/UserName/test_md
-4b58142..d9912f7 main -> main
-```
+To https://github.com/UserName/Git_Training
+   3df6c62..fd209ac  main -> main```
 
 ![](images/Github_end.png)
 
