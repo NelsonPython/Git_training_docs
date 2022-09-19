@@ -10,7 +10,7 @@ Get started by cloning a Github repo, adding content, and pushing updates back t
 
 ## Github repo
 
-![](images/Github_beg.png)
+![](images/Git_beg.png)
 
 Using git on your local machine, follow these steps to clone a repo, add a local file, merge the local file into the main branch, and push the updates back to Github.
 
@@ -109,7 +109,7 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 ```
 
-![](images/bugFix_not_Main.png)
+![](images/bugFix-main.png)
 
 
 ## Merge the changes from the bugFix branch
@@ -144,6 +144,6 @@ Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/UserName/Git_Training
    3df6c62..fd209ac  main -> main```
 
-![](images/Github_end.png)
+![](images/Git_end.png)
 
 
