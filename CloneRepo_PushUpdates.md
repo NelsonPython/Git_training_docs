@@ -15,7 +15,7 @@ Get started by cloning a Github repo, adding content, and pushing updates back t
 Using git on your local machine, follow these steps to clone a repo, add a local file, merge the local file into the main branch, and push the updates back to Github.
 
 ## Configure git on local machine
-If git is not configured, then configure git.
+If git is not configured, then set your username, email address, and text editor.
 
 ```
 $ git config --global user.name UserName
