@@ -56,8 +56,7 @@ $ git log
 
 ![Git log](images/log.png)
 
-
-## Check the status
+Check the status
 
 ```
 $ git status
