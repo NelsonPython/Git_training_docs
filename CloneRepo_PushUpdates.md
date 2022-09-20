@@ -1,4 +1,6 @@
-# Exercise: Clone a Github repo and push updated content
+# DRAFT Exercise: Clone a Github repo and push updated content
+
+<This content is being written.  It may not be 100% accurate and is subject to change>
 
 Get started by cloning a Github repo, adding content, and pushing updates back to Github.
 
