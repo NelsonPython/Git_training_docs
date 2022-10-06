@@ -43,11 +43,11 @@ $ git commit -a -m 'Fix bug 1'
  create mode 100644 bugFix1.md
  ```
 
-Git staging allows you to select and ignore specific files.  If you want to skip staging and commit all the new files, use git commit -a 
+Git staging allows you to select and ignore specific files.  If you want to skip staging and commit all the new files, use ` git commit -a `
 
 
 ## Removing files
-For purposes of example, use your favorite text editor to create another new file called newFile.md
+For purposes of example, use your favorite text editor to create another new file called ` newFile.md `
 
 ### Check the status
 
@@ -65,7 +65,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-newFile.md is not tracked until it is added to git.  Add newFile.md.  
+` newFile.md ` is not tracked until it is added to git.  Add ` newFile.md `.  
 
 ### Add file and check status
 
@@ -82,7 +82,7 @@ Changes to be committed:
         new file:   newFile.md
 ```
 
-Git is now tracking newFile.md.  Suppose you realize that you must delete newFile.md.  Remove newFile.md from your local machine.  When you Git status, Git knows that you deleted the file and offers suggestions.  newFile.md appears under both of these sections:  Changes to be committed and Changes not staged for commit.
+Git is now tracking newFile.md.  Suppose you realize that you must delete ` newFile.md `.  Remove ` newFile.md ` from your local machine.  When you Git status, Git knows that you deleted the file and offers suggestions.  newFile.md appears under both of these sections:  Changes to be committed and Changes not staged for commit.
 
 
 
