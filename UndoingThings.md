@@ -97,6 +97,8 @@ To https://github.com/UserName/Git_Training
    fd209ac..521568d  main -> main
 ```
 
+![Screen capture showing two files addes to repo](images/TwoFiles.png)
+
 ## Restore
 From Git version 2.23.0 onwards, Git will use ` git restore ` instead of ` git reset ` for many undo operations.
 
