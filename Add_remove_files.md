@@ -41,8 +41,10 @@ $ git commit -a -m 'Fix bug 1'
 [bugFix1 fd209ac] Create a new file
  1 file changed, 3 insertions(+)
  create mode 100644 bugFix1.md
+ ```
+
 Git staging allows you to select and ignore specific files.  If you want to skip staging and commit all the new files, use git commit -a 
-```
+
 
 ## Removing files
 For purposes of example, use your favorite text editor to create another new file called newFile.md
