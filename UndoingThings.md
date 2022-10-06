@@ -96,3 +96,12 @@ Total 4 (delta 0), reused 0 (delta 0)
 To https://github.com/UserName/Git_Training
    fd209ac..521568d  main -> main
 ```
+
+## Restore
+From Git version 2.23.0 onwards, Git will use ` git restore ` instead of ` git reset ` for many undo operations.
+
+` git reset ` reverses changes on local branches by moving a branch reference back to an older commit as if the change had never been made.
+
+## Revert
+` git revert ` reverses changes on remote branches
+
