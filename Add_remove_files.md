@@ -1,9 +1,8 @@
-# Git: adding and removing files
+# Adding and Removing Files
 
 Git may find files on your local machine that have not been checked in.  Git identifies these as untracked files.  When you check in a file, Git begins tracking it.  Tracked files can be unmodified, modified, or staged.  The first time you check in a file, the git status will change to tracked / unmodified.  As you edit the file, the status changes to tracked / modified.  When files are ready to be committed, they are staged.  See how this works by navigating to the main branch.  Use git status to double check that you are on the main branch.
 
-
-Check the status
+### Check the status
 
 ```
 $ git status
@@ -13,9 +12,9 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
-Create a new file called bugFix1.md   Commit this new file. 
+Create a new file called ` bugFix1.md `   Commit this new file. 
 
-Create a new file
+### Create a new file
 
 ```
 $ nano bugFix1.md
@@ -30,11 +29,9 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-` bugFix1.md ` is listed under the "Untracked files" heading in your status output.   Untracked indicates that Git found a file that was not in the previous snapshot (commit) and this file has not been staged.  Add bugFix1.md and commit it.
+` bugFix1.md ` is listed under the "Untracked files" heading in your status output.   Untracked indicates that Git found a file that was not in the previous snapshot (commit) and this file has not been staged.  Add ` bugFix1.md ` and commit it.
 
-
-
-Add the new file
+### Add the new file
 
 ```
 $ git add bugFix1.md
@@ -50,7 +47,7 @@ Git staging allows you to select and ignore specific files.  If you want to skip
 ## Removing files
 For purposes of example, use your favorite text editor to create another new file called newFile.md
 
-Check the status
+### Check the status
 
 ```
 $ nano newFile.md
@@ -68,7 +65,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 newFile.md is not tracked until it is added to git.  Add newFile.md.  
 
-Add file and check status
+### Add file and check status
 
 ```
 $ git add newFile.md
@@ -87,7 +84,7 @@ Git is now tracking newFile.md.  Suppose you realize that you must delete newFil
 
 
 
-Check status
+### Check status
 
 ```
 $ rm newFile.md
@@ -109,9 +106,7 @@ Changes not staged for commit:
 
 Remove the file from git and check the status again to see a clean working tree
 
-
-
-Remove a file from git
+### Remove a file from git
 
 ```
 $  git rm newFile.md
