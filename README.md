@@ -4,7 +4,7 @@
 
 [Hello Git Clone World](CloneRepo_PushUpdates.md)
 
-[Adding and removing files](Add_remove_files.md)
+[Adding and Removing files](Add_remove_files.md)
 
 [Undoing Things](UndoingThings.md)
 
