@@ -1,6 +1,8 @@
 # Git Training Documentation
 
-[Exercise: Clone a Github repo and push updated content](CloneRepo_PushUpdates.md)
+[Getting Git](GettingGit.md)
+
+[Hello Git Clone World](CloneRepo_PushUpdates.md)
 
 [Adding and removing files](Add_remove_files.md)
 
