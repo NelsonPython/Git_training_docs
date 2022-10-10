@@ -1,11 +1,11 @@
 # Git Training Documentation
 
-[Getting Git](GettingGit.md)
+[Getting git](GettingGit.md)
 
-[Hello Git Clone World](CloneRepo_PushUpdates.md)
+[Hello git clone world](CloneRepo_PushUpdates.md)
 
-[Adding and Removing files](Add_remove_files.md)
+[Adding and removing files](Add_remove_files.md)
 
-[Undoing Things](UndoingThings.md)
+[Amending git commits](UndoingThings.md)
 
 
