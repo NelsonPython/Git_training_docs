@@ -8,4 +8,6 @@
 
 [Amending git commits](UndoingThings.md)
 
+[Where's the HEAD?](head.md)
+
 
