@@ -96,7 +96,7 @@ ef9f03315694e21695b14e3d7f2e9f993608fab1 Update README.md
 8ecbd5143889e9efc3327fdb28fbdb7f3528fd8e Initial commit
 ```
 
-Check out the initial commit
+### Check out the initial commit
   
 ```
 $ git checkout HEAD~3
