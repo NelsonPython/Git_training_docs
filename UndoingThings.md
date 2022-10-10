@@ -1,6 +1,5 @@
 # Amending git commits
 
-## Amend
 Suppose you committed too early and forgot to include some files.  Perhaps a commit has an unexpected outcome.  Commit again using the ` --amend ` option.
 
 ### Create two files
