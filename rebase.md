@@ -9,11 +9,9 @@ Switched to a new branch 'newFeature'
 $ nano my_new_feature.md
 ```
 
-## Rebase
+### Rebase main
 
 Fast-forward adding the changes made in newFeature to main
-
-### Rebase main
 
 ```
 $ git rebase main
