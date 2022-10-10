@@ -2,7 +2,7 @@
 
 The following diagram shows the git log.  Notice commits are identified with a unique sha that is highlighted in pink.  HEAD is pointing to main (HEAD → main).  The initial commit is at the bottom of the list.  The git log shows the most recent commit at the top.  The git log --pretty=oneline command was used to generate a log with one line per commit.
 
-!()[images/pink_diagram.png]
+![](images/pink_diagram.png)
 
 Use these commands to add a branch called newImage.  View git log each time to confirm where HEAD is pointing.
 
