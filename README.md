@@ -12,6 +12,10 @@
 
 [Navigating the git commit stack](navigating.md)
 
+[Merge](merge.md)
+
+[Rebase](rebase.md)
+
 
 
 
