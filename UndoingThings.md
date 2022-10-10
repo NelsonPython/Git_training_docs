@@ -1,7 +1,7 @@
-# Undoing things
+# Amending git commits
 
 ## Amend
-Suppose you committed too early and forgot to include some files.  Perhaps a commit has an unexpected outcome.  Commit again using the --amend option.
+Suppose you committed too early and forgot to include some files.  Perhaps a commit has an unexpected outcome.  Commit again using the ` --amend ` option.
 
 ### Create two files
 
@@ -26,7 +26,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-Add keepFile.md
+Add ` keepFile.md `
 
 ```
 $ git add keepFile.md
@@ -44,14 +44,18 @@ Untracked files:
         saveFile.md
 ```
 
-Go ahead and commit.  Do not use the -a switch.  Git attempts to add both new files, but saveFile.md is not being tracked.
+Go ahead and commit.  Do not use the -a switch.  Git attempts to add both new files, but ` saveFile.md ` is not being tracked.
 
 ```
 $ git commit -m 'Attempt to add two new files'
 [main 5381efe] Attempt to add two new files
  1 file changed, 3 insertions(+)
  create mode 100644 keepFile.md
- 
+ ```
+
+Because ` saveFile.md ` was not staged, it was not committed.   Add  ` saveFile.md `
+
+```
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 2 commits.
@@ -62,15 +66,14 @@ Untracked files:
         saveFile.md
  
 nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add saveFile.md
+
 ```
-
-Because saveFile.md was not staged, it was not committed.   Add saveFile.md and run git commit --amend
-
+  
 ### Amend the commit
 
-```
-$ git add saveFile.md
- 
+``` 
 $ git commit --amend
 [main 521568d] Add two new files
  Date: Tue Sep 20 12:16:04 2022 -0700
@@ -78,6 +81,11 @@ $ git commit --amend
  create mode 100644 keepFile.md
  create mode 100644 saveFile.md
 ```
+
+A commit edit message file may open for you to eneter a commit message.  Follow the instructions or make no changes and close this file.
+
+![](images/commit_msg.png)
+
 
 ### Push changes to Github
 
