@@ -1,4 +1,4 @@
-# Where's my HEAD?
+# Where's the HEAD?
 
 The following diagram shows the git log with all the commits made so far.  Notice commits are identified with a unique sha that is highlighted in pink.  HEAD is pointing to main (HEAD → main).  The initial commit is at the bottom of the list.  The git log shows the most recent commit at the top.  The git log --pretty=oneline command was used to generate a log with one line per commit.
 
