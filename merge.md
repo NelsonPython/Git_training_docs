@@ -74,3 +74,6 @@ $ git commit -m 'Merge'
 $ git push
 ```
 
+![](images/mergeGit.png)
+
+
