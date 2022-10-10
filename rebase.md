@@ -91,3 +91,7 @@ ef9f03315694e21695b14e3d7f2e9f993608fab1 Update README.md
   
 $ git push
 ```
+
+![](images/rebaseGit.png)
+
+
