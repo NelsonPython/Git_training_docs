@@ -54,7 +54,7 @@ $ git commit -a -m 'Fix bug 1'
  create mode 100644 bugFix1.md
 ```
 
-Git staging allows you to select and ignore specific files.  If you want to skip staging and commit all the new files, use git commit -a 
+Git staging allows you to select and ignore specific files.  If you want to skip staging and commit all the new files, use ` git commit -a `
 
 ## Removing files
 
