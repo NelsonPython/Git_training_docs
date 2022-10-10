@@ -10,4 +10,8 @@
 
 [Where's the HEAD?](head.md)
 
+[Navigating the git commit stack](navigating.md)
+
+
+
 
