@@ -84,7 +84,7 @@ $ git commit --amend
 
 A commit edit message file may open for you to eneter a commit message.  Follow the instructions or make no changes and close this file.
 
-![](images/commit_msg.png)
+![](images/commit_msg.png =400)
 
 
 ### Push changes to Github
