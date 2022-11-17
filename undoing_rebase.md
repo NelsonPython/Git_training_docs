@@ -1,9 +1,7 @@
-If you completed the Git_Training example in the Git Fundamentals course, continue to use your local repo and your personal Github account.  If you are taking Git Best Practices, this is a review.
+# Undoing a rebase or a merge
 
-This is the most popular method discussed on Stackoverflow Undoing a git rebase.  Use git reflog to find the head commit of the branch immediately before you rebased.  In our example, HEAD@{3} is the head commit before the newFeature was added.
+Continue using your local repo and your personal Github account.  This is the most popular method discussed on [Stack Overflow for undoing a git rebase](https://stackoverflow.com/questions/134882/undoing-a-git-rebase).  Use git reflog to find the head commit of the branch immediately before you rebased.  In our example, HEAD@{3} is the head commit before the newFeature was added.
 
-
-git reflog
 
 ```
 $ git reflog
@@ -36,7 +34,6 @@ e24ff9a HEAD@{16}: commit: Fix bug 1
 
 Reset the current branch to HEAD@{3}
 
-git reset
 
 ```
 $ git reset --hard "HEAD@{3}"
@@ -45,7 +42,7 @@ $ git reset --hard "HEAD@{3}"
 HEAD is now at 61d5038 Merge
 
 
-ORIG_HEAD
+## ORIG_HEAD
 Rebase saves the starting commit as ORIG_HEAD so you can reset to it
 
 ```
@@ -59,7 +56,7 @@ $ git rebase --abort
 ```
 
 
-BACKUP_01 TAG
+## BACKUP_01 TAG
 You could add a BACKUP_01 tag on the branch before rebasing then restore using 
 
 ```
