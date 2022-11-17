@@ -22,7 +22,7 @@
 
 [Rebase](rebase.md)
 
-Undoing a rebase or a merge
+[Undoing a rebase or a merge](undoing_rebase.md)
 
-Tags for naming milestones
+[Tags for naming milestones]()
 
