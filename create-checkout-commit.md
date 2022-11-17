@@ -8,33 +8,42 @@ A branch is a pointer to a commit.  Commits are identified by a sha; however, fo
 
 A branch includes the most recent commit and all parent commits.  Create a new branch:
 
+``` 
 git branch newImage
+```
 
 The newImage branch points to C1 along with the main branch.  HEAD is still pointing to main so you are on the main branch.
 
 
 If you commit without changing to the newImage branch, then only the main branch will update.  
 
+```
 git commit
+```
 
 Now the newImage branch is pointing to commit 1 and the main branch pointing to commit 2
 
 ## Checkout a branch
 You must checkout a new branch before committing it.
 
+```
 git checkout newImage
 
 git commit
+```
 
 Now, newImage is pointing to commit 2 and main is pointing to commit 1.
 
 Create and checkout at the same time
 In the first section of this course, you used this shortcut command to simultaneously create a new branch and check it out:
 
+```
 $ git checkout -b <branch name>
+```
 
 ## Commit
 A commit in a git repository records a snapshot of all the (tracked) files in your directory.  You used this command to commit all the files and write a message to the log.
 
+```
 $ git commit -a -m 'Commit all the files'
-
+```
