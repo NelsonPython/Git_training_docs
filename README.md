@@ -12,7 +12,7 @@
 
 ## Git Workflow
 
-Create, Checkout, Commit
+[Create, Checkout, Commit](create-checkout-commit.md)
 
 [Where's the HEAD?](head.md)
 
